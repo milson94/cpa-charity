@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html><head>
+<title>CPA-CHARITY</title>
+<link rel="Shorcut Icon" 
+		type="image/png"
+	  	href="R.png"
+>
+<meta charset="utf-8">
+<meta content="width=device-width" name="viewport">
+<style>
+		.bee-row,
+		.bee-row-content {
+			position: relative; 
+			text-transform: none;
+			color: blue;
+			
+		}
+
+		body {
+			background-color: #004551;
+			text-decoration: none; 
+			color: #000;
+			font-family: Arial, Helvetica Neue, Helvetica, sans-serif
+		}
+
+		a {
+			color: #0068a5; 
+			text-decoration: none;
+		}
+
+		* {
+			box-sizing: border-box
+		}
+
+		body,
+		h1,
+		h3,
+		p {
+			margin: 0
+		}
+
+		.bee-row-content {
+			max-width: 1020px;
+			margin: 0 auto;
+			display: flex
+		}
+
+		.bee-row-content .bee-col-w1 {
+			flex-basis: 8%
+		}
+
+		.bee-row-content .bee-col-w2 {
+			flex-basis: 17%
+		}
+
+		.bee-row-content .bee-col-w3 {
+			flex-basis: 25%
+		}
+
+		.bee-row-content .bee-col-w7 {
+			flex-basis: 58%
+		}
+
+		.bee-row-content .bee-col-w8 {
+			flex-basis: 67%
+		}
+
+		.bee-row-content .bee-col-w12 {
+			flex-basis: 100%
+		}
+
+		.bee-icon .bee-icon-label-right a {
+			text-decoration: none
+		}
+
+		.bee-divider,
+		.bee-image {
+			overflow: auto
+		}
+
+		.bee-divider .center,
+		.bee-image .bee-center {
+			margin: 0 auto
+		}
+
+		.bee-row-10 .bee-col-1 .bee-block-1,
+		.bee-row-11 .bee-col-2 .bee-block-1,
+		.bee-row-12 .bee-col-1 .bee-block-1,
+		.bee-row-2 .bee-col-1 .bee-block-1,
+		.bee-row-3 .bee-col-2 .bee-block-1,
+		.bee-row-4 .bee-col-1 .bee-block-1,
+		.bee-row-6 .bee-col-1 .bee-block-1,
+		.bee-row-7 .bee-col-2 .bee-block-1,
+		.bee-row-8 .bee-col-1 .bee-block-1 {
+			width: 100%
+		}
+
+		.bee-icon {
+			display: inline-block;
+			vertical-align: middle
+		}
+
+		.bee-icon .bee-content {
+			display: flex;
+			align-items: center
+		}
+
+		.bee-image img {
+			display: block;
+			width: 100%
+		}
+
+		.bee-paragraph {
+			overflow-wrap: anywhere
+		}
+
+		@media (max-width:768px) {
+			.bee-row-content:not(.no_stack) {
+				display: block
+			}
+		}
+
+		.bee-row-1,
+		.bee-row-10,
+		.bee-row-12,
+		.bee-row-13,
+		.bee-row-14,
+		.bee-row-15,
+		.bee-row-16,
+		.bee-row-17,
+		.bee-row-2,
+		.bee-row-4,
+		.bee-row-5,
+		.bee-row-6,
+		.bee-row-8,
+		.bee-row-9 {
+			background-repeat: no-repeat
+		}
+
+		.bee-row-1 .bee-row-content,
+		.bee-row-10 .bee-row-content,
+		.bee-row-12 .bee-row-content,
+		.bee-row-13 .bee-row-content,
+		.bee-row-2 .bee-row-content,
+		.bee-row-4 .bee-row-content,
+		.bee-row-5 .bee-row-content,
+		.bee-row-6 .bee-row-content,
+		.bee-row-8 .bee-row-content,
+		.bee-row-9 .bee-row-content {
+			background-color: #fff;
+			background-repeat: no-repeat;
+			color: #000
+		}
+
+		.bee-row-1 .bee-col-2 .bee-block-1 {
+			padding: 30px 10px;
+			text-align: center;
+			width: 100%
+		}
+
+		.bee-row-11,
+		.bee-row-3,
+		.bee-row-7 {
+			background-repeat: no-repeat;
+			background-size: auto
+		}
+
+		.bee-row-11 .bee-row-content,
+		.bee-row-3 .bee-row-content,
+		.bee-row-7 .bee-row-content {
+			background-color: #fff;
+			background-image: url('https://d1oco4z2z1fhwp.cloudfront.net/templates/default/6856/section-tiles-1025.png');
+			background-position: top center;
+			background-repeat: repeat;
+			background-size: auto;
+			color: #000
+		}
+
+		.bee-row-11 .bee-col-3 .bee-block-1,
+		.bee-row-3 .bee-col-3 .bee-block-1,
+		.bee-row-7 .bee-col-3 .bee-block-1 {
+			width: 100%;
+			text-align: center
+		}
+
+		.bee-row-11 .bee-col-3 .bee-block-2,
+		.bee-row-3 .bee-col-3 .bee-block-2,
+		.bee-row-7 .bee-col-3 .bee-block-2 {
+			padding: 10px 30px 20px
+		}
+
+		.bee-row-14 .bee-row-content,
+		.bee-row-15 .bee-row-content,
+		.bee-row-16 .bee-row-content {
+			background-color: #e6f9fd;
+			background-repeat: no-repeat;
+			color: #000
+		}
+
+		.bee-row-15 .bee-col-1 .bee-block-2 {
+			padding: 10px
+		}
+
+		.bee-row-16 .bee-col-1 .bee-block-1 {
+			padding-bottom: 30px;
+			padding-left: 20px;
+			padding-right: 20px
+		}
+
+		.bee-row-17 .bee-row-content {
+			background-repeat: no-repeat;
+			color: #000
+		}
+
+		.bee-row-17 .bee-col-1 {
+			padding-bottom: 5px;
+			padding-top: 5px
+		}
+
+		.bee-row-17 .bee-col-1 .bee-block-1 {
+			color: #9d9d9d;
+			font-family: inherit;
+			font-size: 15px;
+			padding-bottom: 5px;
+			padding-top: 5px;
+			text-align: center
+		}
+
+		.bee-row-11 .bee-col-3 .bee-block-2,
+		.bee-row-3 .bee-col-3 .bee-block-2,
+		.bee-row-7 .bee-col-3 .bee-block-2 {
+			color: #002f38;
+			direction: ltr;
+			font-size: 16px;
+			font-weight: 400;
+			letter-spacing: 0;
+			line-height: 150%;
+			text-align: left
+		}
+
+		.bee-row-11 .bee-col-3 .bee-block-2 a,
+		.bee-row-16 .bee-col-1 .bee-block-1 a,
+		.bee-row-3 .bee-col-3 .bee-block-2 a,
+		.bee-row-7 .bee-col-3 .bee-block-2 a {
+			color: #8a3b8f
+		}
+
+		.bee-row-11 .bee-col-3 .bee-block-2 p:not(:last-child),
+		.bee-row-3 .bee-col-3 .bee-block-2 p:not(:last-child),
+		.bee-row-7 .bee-col-3 .bee-block-2 p:not(:last-child) {
+			margin-bottom: 16px
+		}
+
+		.bee-row-16 .bee-col-1 .bee-block-1 {
+			color: #002f38;
+			direction: ltr;
+			font-size: 14px;
+			font-weight: 400;
+			letter-spacing: 0;
+			line-height: 120%;
+			text-align: center
+		}
+
+		.bee-row-16 .bee-col-1 .bee-block-1 p:not(:last-child) {
+			margin-bottom: 0
+		}
+
+		.bee-row-17 .bee-col-1 .bee-block-1 .bee-icon-image {
+			padding: 5px 6px 5px 5px
+		}
+
+		.bee-row-17 .bee-col-1 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content {
+			margin-left: 0
+		}
+
+		.bee-row-17 .bee-col-1 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+	</style>
+</head>
+<body>
+<div class="bee-page-container">
+<div class="bee-row bee-row-1">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w2">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:1px;"></div>
+</div>
+</div>
+<div class="bee-col bee-col-2 bee-col-w8">
+<div class="bee-block bee-block-1 bee-heading">
+	<!-- please complete the offesr below -->
+<h3 style="color:#000000;direction:ltr;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;font-size:36px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Bitte schließen Sie die unten stehenden Angebote ab.</span> </h3>
+</div>
+</div>
+<div class="bee-col bee-col-3 bee-col-w2">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:1px;"></div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- one row  end-->
+
+<!-- another row start -->
+
+
+
+<div class="bee-row bee-row-5">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:40px;"></div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="bee-row bee-row-6">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-image"><img alt="" class="bee-center bee-autowidth" src="images/section-top-1025.png" style="max-width:875px;"></div>
+</div>
+</div>
+</div>
+
+<!-- Link-1 open -->
+<a href="https://playabledownload.com/show.php?l=0&u=465531&id=53194&tracking_id=">
+<div class="bee-row bee-row-7">
+	<div class="bee-row-content">
+	<div class="bee-col bee-col-1 bee-col-w1">
+	<div class="bee-block bee-block-1 bee-spacer">
+	<div class="spacer" style="height:1px;"></div>
+	</div>
+	</div>
+	<div class="bee-col bee-col-2 bee-col-w3">
+	<div class="bee-block bee-block-1 bee-image"><img alt="" class="bee-center bee-autowidth" src="images/image-1.png" style="max-width:255px;"></div>
+	</div>
+	<div class="bee-col bee-col-3 bee-col-w7">
+	<div class="bee-block bee-block-1 bee-heading">
+	<h1 style="color:#555555;font-size:23px;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;line-height:120%;text-align:center;direction:ltr;font-weight:700;letter-spacing:normal;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">&nbsp; &nbsp; &nbsp;Holen Sie sich Ihren Amazon 1000 € Gutschein!</span> </h1>
+	</div>
+	<div class="bee-block bee-block-2 bee-paragraph">
+	<p>Geben Sie jetzt Ihre Daten ein, um eine Gewinnchance zu erhalten.
+		<br> <i> Nur für Android-Nutzer</i>
+	</p>
+	</div>
+	</div>
+	<div class="bee-col bee-col-4 bee-col-w1">
+	<div class="bee-block bee-block-1 bee-spacer">
+	<div class="spacer" style="height:1px;"></div>
+	</div>
+	</div>
+	</div>
+	</div>
+	
+	<div class="bee-row bee-row-8">
+	<div class="bee-row-content">
+	<div class="bee-col bee-col-1 bee-col-w12">
+	<div class="bee-block bee-block-1 bee-image"><img alt="" class="bee-center bee-autowidth" src="images/section-bot-1025.png" style="max-width:875px;"></div>
+	</div>
+	</div>
+	</div>
+	
+	<div class="bee-row bee-row-9">
+	<div class="bee-row-content">
+	<div class="bee-col bee-col-1 bee-col-w12">
+	<div class="bee-block bee-block-1 bee-spacer">
+	<div class="spacer" style="height:40px;"></div>
+	</div>
+	</div>
+	</div>
+	</div>
+</a>
+	<!-- Link-1  close -->
+
+<!-- Link-2  open [for iphone users]-->
+<a href="https://playabledownload.com/show.php?l=0&u=465531&id=53195&tracking_id=">
+	<div class="bee-row bee-row-7">
+		<div class="bee-row-content">
+		<div class="bee-col bee-col-1 bee-col-w1">
+		<div class="bee-block bee-block-1 bee-spacer">
+		<div class="spacer" style="height:1px;"></div>
+		</div>
+		</div>
+		<div class="bee-col bee-col-2 bee-col-w3">
+		<div class="bee-block bee-block-1 bee-image"><img alt="" class="bee-center bee-autowidth" src="images/image-1.png" style="max-width:255px;"></div>
+		</div>
+		<div class="bee-col bee-col-3 bee-col-w7">
+		<div class="bee-block bee-block-1 bee-heading">
+		<h1 style="color:#555555;font-size:23px;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;line-height:120%;text-align:center;direction:ltr;font-weight:700;letter-spacing:normal;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">&nbsp; &nbsp; &nbsp;Holen Sie sich Ihren Amazon 1000 € Gutschein!</span> </h1>
+		</div>
+		<div class="bee-block bee-block-2 bee-paragraph">
+		
+		<p>Geben Sie jetzt Ihre Daten ein, um eine Gewinnchance zu erhalten.
+			<br> <i> Nur für iPhone-Nutzer</i>
+		</p>
+
+		</div>
+		</div>
+		<div class="bee-col bee-col-4 bee-col-w1">
+		<div class="bee-block bee-block-1 bee-spacer">
+		<div class="spacer" style="height:1px;"></div>
+		</div>
+		</div>
+		</div>
+		</div>
+		
+		<div class="bee-row bee-row-8">
+		<div class="bee-row-content">
+		<div class="bee-col bee-col-1 bee-col-w12">
+		<div class="bee-block bee-block-1 bee-image"><img alt="" class="bee-center bee-autowidth" src="images/section-bot-1025.png" style="max-width:875px;"></div>
+		</div>
+		</div>
+		</div>
+		
+		<div class="bee-row bee-row-9">
+		<div class="bee-row-content">
+		<div class="bee-col bee-col-1 bee-col-w12">
+		<div class="bee-block bee-block-1 bee-spacer">
+		<div class="spacer" style="height:40px;"></div>
+		</div>
+		</div>
+		</div>
+		</div>
+	</a>
+		<!-- Link-2 close -->
+
+	<!-- Link-3 open -->
+<a href="https://playabledownload.com/show.php?l=0&u=465531&id=53762&tracking_id=">
+	<div class="bee-row bee-row-7">
+		<div class="bee-row-content">
+		<div class="bee-col bee-col-1 bee-col-w1">
+		<div class="bee-block bee-block-1 bee-spacer">
+		<div class="spacer" style="height:1px;"></div>
+		</div>
+		</div>
+		<div class="bee-col bee-col-2 bee-col-w3">
+		<div class="bee-block bee-block-1 bee-image"><img alt="" class="bee-center bee-autowidth" src="images/image-2.png" style="max-width:255px;"></div>
+		</div>
+		<div class="bee-col bee-col-3 bee-col-w7">
+		<div class="bee-block bee-block-1 bee-heading">
+		<h1 style="color:#555555;font-size:23px;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;line-height:120%;text-align:center;direction:ltr;font-weight:700;letter-spacing:normal;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">&nbsp; &nbsp; &nbsp;Verdienen Sie Geld mit der Teilnahme an Umfragen!</span> </h1>
+		</div>
+		<div class="bee-block bee-block-2 bee-paragraph">
+		<p>Geben Sie jetzt Ihre Daten ein, um eine Gewinnchance zu erhalten.
+			<br> <i> Nur für iPhone-Nutzer</i>
+		</p>
+		</div>
+		</div>
+		<div class="bee-col bee-col-4 bee-col-w1">
+		<div class="bee-block bee-block-1 bee-spacer">
+		<div class="spacer" style="height:1px;"></div>
+		</div>
+		</div>
+		</div>
+		</div>
+		
+		<div class="bee-row bee-row-8">
+		<div class="bee-row-content">
+		<div class="bee-col bee-col-1 bee-col-w12">
+		<div class="bee-block bee-block-1 bee-image"><img alt="" class="bee-center bee-autowidth" src="images/section-bot-1025.png" style="max-width:875px;"></div>
+		</div>
+		</div>
+		</div>
+		
+		<div class="bee-row bee-row-9">
+		<div class="bee-row-content">
+		<div class="bee-col bee-col-1 bee-col-w12">
+		<div class="bee-block bee-block-1 bee-spacer">
+		<div class="spacer" style="height:40px;"></div>
+		</div>
+		</div>
+		</div>
+		</div>
+	</a>
+		<!-- Link-3 close -->
+
+	<!-- Link-4 open -->
+<a href="https://playabledownload.com/show.php?l=0&u=465531&id=48682&tracking_id=">
+	<div class="bee-row bee-row-7">
+		<div class="bee-row-content">
+		<div class="bee-col bee-col-1 bee-col-w1">
+		<div class="bee-block bee-block-1 bee-spacer">
+		<div class="spacer" style="height:1px;"></div>
+		</div>
+		</div>
+		<div class="bee-col bee-col-2 bee-col-w3">
+		<div class="bee-block bee-block-1 bee-image"><img alt="" class="bee-center bee-autowidth" src="images/image-3.png" style="max-width:255px;"></div>
+		</div>
+		<div class="bee-col bee-col-3 bee-col-w7">
+		<div class="bee-block bee-block-1 bee-heading">
+		<h1 style="color:#555555;font-size:23px;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;line-height:120%;text-align:center;direction:ltr;font-weight:700;letter-spacing:normal;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">&nbsp; &nbsp; &nbsp;Verifizieren Sie sich!</span> </h1>
+		</div>
+		<div class="bee-block bee-block-2 bee-paragraph">
+		<p style="text-align: center;">Verifiziere dich jetzt. <br> <i> Nur für iPhone-Nutzer</i></p>
+		</div>
+		</div>
+		<div class="bee-col bee-col-4 bee-col-w1">
+		<div class="bee-block bee-block-1 bee-spacer">
+		<div class="spacer" style="height:1px;"></div>
+		</div>
+		</div>
+		</div>
+		</div>
+		
+		<div class="bee-row bee-row-8">
+		<div class="bee-row-content">
+		<div class="bee-col bee-col-1 bee-col-w12">
+		<div class="bee-block bee-block-1 bee-image"><img alt="" class="bee-center bee-autowidth" src="images/section-bot-1025.png" style="max-width:875px;"></div>
+		</div>
+		</div>
+		</div>
+		
+		<div class="bee-row bee-row-9">
+		<div class="bee-row-content">
+		<div class="bee-col bee-col-1 bee-col-w12">
+		<div class="bee-block bee-block-1 bee-spacer">
+		<div class="spacer" style="height:40px;"></div>
+		</div>
+		</div>
+		</div>
+		</div>
+	</a>
+		<!-- LInk-4 close -->
+
+
+
+<div class="bee-row bee-row-13">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:40px;"></div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="bee-row bee-row-14">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w2">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:1px;"></div>
+</div>
+</div>
+<div class="bee-col bee-col-2 bee-col-w8"></div>
+<div class="bee-col bee-col-3 bee-col-w2">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:1px;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-15">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-spacer">
+<div class="spacer" style="height:20px;"></div>
+</div>
+<div class="bee-block bee-block-2 bee-divider">
+<div class="center bee-separator" style="border-top:1px solid #006E83;width:10%;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-16">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-paragraph">
+<p><strong>Wir schätzen Ihre Zeit und Ihre Berücksichtigung.</strong></p>
+<p>&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-17">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-icons">
+<div class="bee-icon bee-icon-last">
+<div class="bee-content">
+
+
+
+
+
+
+	
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>
